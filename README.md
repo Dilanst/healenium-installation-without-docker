@@ -24,22 +24,22 @@ Ensure that the following tools are installed on your system:
 
 1. Clone this repository:
 
-   \`\`\`bash
+   ```bash
    git clone https://github.com/your-username/healenium-installation-without-docker.git
    cd healenium-installation-without-docker
-   \`\`\`
+   ```
 
 2. Give execute permissions to the installation script:
 
-   \`\`\`bash
+   ```bash
    chmod +x install_healenium_with_service.sh
-   \`\`\`
+   ```
 
 3. Run the script:
 
-   \`\`\`bash
+   ```bash
    ./install_healenium_with_service.sh
-   \`\`\`
+   ```
 
 This will:
 
@@ -54,27 +54,27 @@ Once the installation is complete, you can manage the Healenium service using sy
 
 - **Start the service**:
   
-  \`\`\`bash
+  ```bash
   sudo systemctl start healenium.service
-  \`\`\`
+  ```
 
 - **Stop the service**:
   
-  \`\`\`bash
+  ```bash
   sudo systemctl stop healenium.service
-  \`\`\`
+  ```
 
 - **Check the service status**:
 
-  \`\`\`bash
+  ```bash
   sudo systemctl status healenium.service
-  \`\`\`
+  ```
 
 - **Enable the service to start on boot**:
 
-  \`\`\`bash
+  ```bash
   sudo systemctl enable healenium.service
-  \`\`\`
+  ```
 
 ## Customization
 
