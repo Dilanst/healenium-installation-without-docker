@@ -29,6 +29,8 @@ sudo -u postgres psql -tc "SELECT 1 FROM pg_roles WHERE rolname = '$DB_USER'" | 
 sudo -u postgres psql -c "GRANT ALL PRIVILEGES ON DATABASE $DB_NAME TO $DB_USER;"
 
 # 5. Clone Healenium Backend repository
+sudo mkdir -p $INSTALL_PATH
+sudo chmod -R 775 $INSTALL_PATH
 echo "Cloning Healenium Backend repository..."
 sudo git clone https://github.com/healenium/healenium-backend.git $INSTALL_PATH
 cd $INSTALL_PATH
