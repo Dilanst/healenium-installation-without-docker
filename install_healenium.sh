@@ -38,7 +38,7 @@ cd $INSTALL_PATH
 # 6. Configure database connection in backend
 echo "Configuring the application.properties file..."
 mkdir -p src/main/resources
-cat <<EOL >src/main/resources/application.properties
+cat <<EOL >src/main/resources/application.yml
 spring.datasource.url=jdbc:postgresql://localhost:5432/$DB_NAME
 spring.datasource.username=$DB_USER
 spring.datasource.password=$DB_PASS
